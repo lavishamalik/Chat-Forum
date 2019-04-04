@@ -313,7 +313,7 @@ public class ChatActivity extends AppCompatActivity {
            DatabaseReference dbref = FirebaseDatabase.getInstance().getReference("Users");
 //        Log.e("TAGFinal","uid"+ firebaseUser.getUid());
 
-            dbref.removeEventListener(listener);
+         //   dbref.removeEventListener(listener);
 
             dbref.child(firebaseUser.getUid()).child("status").setValue("Offline");
         }
