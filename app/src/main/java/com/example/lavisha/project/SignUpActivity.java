@@ -105,7 +105,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                     hashMap.put("id", userId);
                                                     hashMap.put("username", name);
                                                     hashMap.put("imgurl", "default");
-
+                                                    Log.e("TAGNEWTAG","set");
                                                     databaseReference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                         @Override
                                                         public void onComplete(@NonNull Task<Void> task) {
